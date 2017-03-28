@@ -7,21 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2010B1EA1E8AE25000B65CC1 /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2010B1E91E8AE25000B65CC1 /* Ticket.swift */; };
 		202820301E8ACE830050484A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2028202F1E8ACE830050484A /* AppDelegate.swift */; };
-		202820321E8ACE830050484A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202820311E8ACE830050484A /* ViewController.swift */; };
 		202820351E8ACE830050484A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 202820331E8ACE830050484A /* Main.storyboard */; };
 		202820371E8ACE830050484A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 202820361E8ACE830050484A /* Assets.xcassets */; };
 		2028203A1E8ACE830050484A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 202820381E8ACE830050484A /* LaunchScreen.storyboard */; };
+		202820421E8ACEC60050484A /* JackpotTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202820411E8ACEC60050484A /* JackpotTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2010B1E91E8AE25000B65CC1 /* Ticket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ticket.swift; path = ../Ticket.swift; sourceTree = "<group>"; };
 		2028202C1E8ACE830050484A /* Jackpot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jackpot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2028202F1E8ACE830050484A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		202820311E8ACE830050484A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		202820341E8ACE830050484A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		202820361E8ACE830050484A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		202820391E8ACE830050484A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2028203B1E8ACE830050484A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		202820411E8ACEC60050484A /* JackpotTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JackpotTableViewController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +57,8 @@
 			isa = PBXGroup;
 			children = (
 				2028202F1E8ACE830050484A /* AppDelegate.swift */,
-				202820311E8ACE830050484A /* ViewController.swift */,
+				202820411E8ACEC60050484A /* JackpotTableViewController.swift */,
+				2010B1E91E8AE25000B65CC1 /* Ticket.swift */,
 				202820331E8ACE830050484A /* Main.storyboard */,
 				202820361E8ACE830050484A /* Assets.xcassets */,
 				202820381E8ACE830050484A /* LaunchScreen.storyboard */,
@@ -136,7 +139,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				202820321E8ACE830050484A /* ViewController.swift in Sources */,
+				202820421E8ACEC60050484A /* JackpotTableViewController.swift in Sources */,
+				2010B1EA1E8AE25000B65CC1 /* Ticket.swift in Sources */,
 				202820301E8ACE830050484A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,6 +301,7 @@
 				202820401E8ACE830050484A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
