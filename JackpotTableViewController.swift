@@ -5,13 +5,19 @@
 //  Created by Timothy Hang on 3/28/17.
 //  Copyright © 2017 Timothy Hang. All rights reserved.
 //
+//https://iswift.org/cookbook/generate-a-random-number          random number generator
 
 import UIKit
 
 class JackpotTableViewController: UITableViewController
 {
-  @IBOutlet weak var addButton: UIBarButtonItem!
   var lotteryArray = [Ticket]()
+  var randomNum1 = String(arc4random_uniform(52))
+  var randomNum2 = String(arc4random_uniform(52))
+  var randomNum3 = String(arc4random_uniform(52))
+  var randomNum4 = String(arc4random_uniform(52))
+  var randomNum5 = String(arc4random_uniform(52))
+  var randomNum6 = String(arc4random_uniform(52))
   
   override func viewDidLoad()
   {
@@ -22,7 +28,7 @@ class JackpotTableViewController: UITableViewController
   override func didReceiveMemoryWarning()
   {
     super.didReceiveMemoryWarning()
-      // Dispose of any resources that can be recreated.
+    // Dispose of any resources that can be recreated.
   }
 
   // MARK: - Table view data source
@@ -41,16 +47,21 @@ class JackpotTableViewController: UITableViewController
   
   func randomNumbersGenerated()
   {
-    let aTicket = Ticket(number1: "2", number2: "5", number3: "7", number4: "8", number5: "9", number6: "50")
+    let aTicket = Ticket(number1: randomNum1, number2: randomNum2, number3: randomNum3, number4: randomNum4, number5: randomNum5, number6: randomNum6)
     lotteryArray.append(aTicket)
   }
-  
   
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
   {
     let cell = tableView.dequeueReusableCell(withIdentifier: "ticket", for: indexPath)
-    cell.textLabel?.text = "2 5 7 8 9 50"
+    let ticket = lotteryArray[indexPath.row]
+    cell.textLabel?.text = ticket.description()
     return cell
+  }
+  
+  @IBAction func plusTapped(sender: UIBarButtonItem)
+  {
+    randomNumbersGenerated()
   }
 
   /*

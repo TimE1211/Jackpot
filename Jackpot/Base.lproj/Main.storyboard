@@ -33,11 +33,13 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="cKQ-gU-hk6">
-                        <barButtonItem key="rightBarButtonItem" title="+" id="6gY-Ue-ltn"/>
+                        <nil key="title"/>
+                        <barButtonItem key="rightBarButtonItem" title="+" id="Mz6-2a-D9g">
+                            <connections>
+                                <action selector="plusTappedWithSender:" destination="wAX-kR-SkI" id="bqg-36-Bsm"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
-                    <connections>
-                        <outlet property="addButton" destination="6gY-Ue-ltn" id="XRB-A0-TIH"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qaa-PW-NOd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

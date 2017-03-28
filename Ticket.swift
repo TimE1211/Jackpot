@@ -27,5 +27,8 @@ class Ticket
     self.number6 = number6
   }
   
-  
+  func description() -> String
+  {
+    return "\(number1) \(number2) \(number3) \(number4) \(number5) \(number6)"
+  }
 }
