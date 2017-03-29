@@ -123,11 +123,19 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KVz-1k-WCX">
+                                <rect key="frame" x="156" y="388" width="63" height="30"/>
+                                <state key="normal" title="Compare"/>
+                                <connections>
+                                    <action selector="compareToTickets:" destination="PPb-Ry-FJL" eventType="touchUpInside" id="8gH-bY-rcB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="gEp-Xs-YvA" firstAttribute="top" secondItem="rdM-10-eL2" secondAttribute="top" id="0LR-fJ-eeA"/>
                             <constraint firstItem="gEp-Xs-YvA" firstAttribute="top" secondItem="VoX-rB-Ren" secondAttribute="bottom" constant="20" id="1zc-bb-Ur5"/>
+                            <constraint firstItem="KVz-1k-WCX" firstAttribute="top" secondItem="gEp-Xs-YvA" secondAttribute="bottom" constant="40" id="7zZ-XS-hFq"/>
                             <constraint firstItem="Cpf-eK-fsb" firstAttribute="leading" secondItem="gEp-Xs-YvA" secondAttribute="trailing" constant="10" id="Cnw-2g-Rhy"/>
                             <constraint firstItem="rdM-10-eL2" firstAttribute="top" secondItem="81R-pD-Yhv" secondAttribute="top" id="GL1-Hg-NDv"/>
                             <constraint firstItem="UE0-ca-zF4" firstAttribute="width" secondItem="Cpf-eK-fsb" secondAttribute="width" id="Myq-Tm-meg"/>
@@ -140,6 +148,7 @@
                             <constraint firstItem="pRE-p2-86o" firstAttribute="width" secondItem="UE0-ca-zF4" secondAttribute="width" id="nFZ-VW-wEx"/>
                             <constraint firstItem="rdM-10-eL2" firstAttribute="width" secondItem="81R-pD-Yhv" secondAttribute="width" id="ngk-WK-wqz"/>
                             <constraint firstItem="Cpf-eK-fsb" firstAttribute="width" secondItem="gEp-Xs-YvA" secondAttribute="width" id="nzP-r5-30l"/>
+                            <constraint firstItem="KVz-1k-WCX" firstAttribute="centerX" secondItem="8bx-N6-2KM" secondAttribute="centerX" id="oVD-nV-uHc"/>
                             <constraint firstItem="Cpf-eK-fsb" firstAttribute="top" secondItem="gEp-Xs-YvA" secondAttribute="top" id="qJz-Pl-wM7"/>
                             <constraint firstAttribute="trailingMargin" secondItem="pRE-p2-86o" secondAttribute="trailing" constant="10" id="qfu-Yp-KT0"/>
                             <constraint firstItem="UE0-ca-zF4" firstAttribute="top" secondItem="Cpf-eK-fsb" secondAttribute="top" id="tIZ-su-Oru"/>
@@ -149,6 +158,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="compareToTickets" destination="KVz-1k-WCX" id="e7P-Rz-ClN"/>
                         <outlet property="fifthNumberTextField" destination="UE0-ca-zF4" id="YXC-aE-dsG"/>
                         <outlet property="firstNumberTextField" destination="81R-pD-Yhv" id="dh2-9S-UDQ"/>
                         <outlet property="fourthNumberTextField" destination="Cpf-eK-fsb" id="D5U-Z5-gzG"/>

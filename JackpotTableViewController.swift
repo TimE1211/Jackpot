@@ -9,7 +9,7 @@
 
 import UIKit
 
-class JackpotTableViewController: UITableViewController
+class JackpotTableViewController: UITableViewController //, WinningTicketDelegate
 {
   var lotteryArray = [Ticket]()
   
@@ -60,7 +60,12 @@ class JackpotTableViewController: UITableViewController
 //    let winningTicketViewController = segue.destination as! WinningTicketViewController
 //    winningTicketViewController = sender as! UIBarButtonItem
   }
+//  func compareWinningTicket(winningTicket: [String])
+//  {
+//  let ticket = lotteryArray[indexPath.row]
+//  cell.textLabel?.text = "Ticket" + "\(ticketNumber): " + ticket.description()
 
+//  }
 }
 
 
