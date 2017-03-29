@@ -12,17 +12,16 @@ import UIKit
 class JackpotTableViewController: UITableViewController
 {
   var lotteryArray = [Ticket]()
-  var randomNum1 = String(arc4random_uniform(52))
-  var randomNum2 = String(arc4random_uniform(52))
-  var randomNum3 = String(arc4random_uniform(52))
-  var randomNum4 = String(arc4random_uniform(52))
-  var randomNum5 = String(arc4random_uniform(52))
-  var randomNum6 = String(arc4random_uniform(52))
+  var Number1 = String(arc4random_uniform(52)) //: String
+  var Number2 = String(arc4random_uniform(52))
+  var Number3 = String(arc4random_uniform(52))
+  var Number4 = String(arc4random_uniform(52))
+  var Number5 = String(arc4random_uniform(52))
+  var Number6 = String(arc4random_uniform(52))
   
   override func viewDidLoad()
   {
     super.viewDidLoad()
-    randomNumbersGenerated()
   }
 
   override func didReceiveMemoryWarning()
@@ -44,13 +43,13 @@ class JackpotTableViewController: UITableViewController
       // #warning Incomplete implementation, return the number of rows
     return lotteryArray.count
   }
-  
-  func randomNumbersGenerated()
-  {
-    let aTicket = Ticket(number1: randomNum1, number2: randomNum2, number3: randomNum3, number4: randomNum4, number5: randomNum5, number6: randomNum6)
-    lotteryArray.append(aTicket)
-  }
-  
+//  
+//  func winningNumbersEntered()
+//  {
+//    let winningTicket = Ticket(number1: randomNum1, number2: randomNum2, number3: randomNum3, number4: randomNum4, number5: randomNum5, number6: randomNum6)
+//    lotteryArray.append(aTicket)
+//  }
+//  
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
   {
     let cell = tableView.dequeueReusableCell(withIdentifier: "ticket", for: indexPath)
@@ -61,7 +60,8 @@ class JackpotTableViewController: UITableViewController
   
   @IBAction func plusTapped(sender: UIBarButtonItem)
   {
-    randomNumbersGenerated()
+    Ticket.createPick()
+    
   }
 
   /*
