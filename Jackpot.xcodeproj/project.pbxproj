@@ -13,6 +13,7 @@
 		202820371E8ACE830050484A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 202820361E8ACE830050484A /* Assets.xcassets */; };
 		2028203A1E8ACE830050484A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 202820381E8ACE830050484A /* LaunchScreen.storyboard */; };
 		202820421E8ACEC60050484A /* JackpotTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202820411E8ACEC60050484A /* JackpotTableViewController.swift */; };
+		2038F4F91E8C06420087DF40 /* WinningTicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2038F4F81E8C06420087DF40 /* WinningTicketViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		202820391E8ACE830050484A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2028203B1E8ACE830050484A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		202820411E8ACEC60050484A /* JackpotTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JackpotTableViewController.swift; sourceTree = SOURCE_ROOT; };
+		2038F4F81E8C06420087DF40 /* WinningTicketViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WinningTicketViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				2028202F1E8ACE830050484A /* AppDelegate.swift */,
 				202820411E8ACEC60050484A /* JackpotTableViewController.swift */,
+				2038F4F81E8C06420087DF40 /* WinningTicketViewController.swift */,
 				2010B1E91E8AE25000B65CC1 /* Ticket.swift */,
 				202820331E8ACE830050484A /* Main.storyboard */,
 				202820361E8ACE830050484A /* Assets.xcassets */,
@@ -142,6 +145,7 @@
 				202820421E8ACEC60050484A /* JackpotTableViewController.swift in Sources */,
 				2010B1EA1E8AE25000B65CC1 /* Ticket.swift in Sources */,
 				202820301E8ACE830050484A /* AppDelegate.swift in Sources */,
+				2038F4F91E8C06420087DF40 /* WinningTicketViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
