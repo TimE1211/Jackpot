@@ -9,13 +9,11 @@
 import UIKit
 protocol WinningTicketViewControllerDelegate
 {
-  func winningTicketViewController(
+  func winningTicketViewController(vc:WinningTicketViewController, winningTicketWasChosen: Ticket)
 }
 
 class WinningTicketViewController: UIViewController, UITextFieldDelegate
 {
-
-  var winningTicket = [String]()
   
   @IBOutlet weak var firstNumberTextField: UITextField!
   @IBOutlet weak var secondNumberTextField: UITextField!
@@ -23,6 +21,10 @@ class WinningTicketViewController: UIViewController, UITextFieldDelegate
   @IBOutlet weak var fourthNumberTextField: UITextField!
   @IBOutlet weak var fifthNumberTextField: UITextField!
   @IBOutlet weak var sixthNumberTextField: UITextField!
+  
+  var winningTicket = [String]()
+  var winningTicketNumbers = [String]()
+  var delegate: WinningTicketViewControllerDelegate!
   
   override func viewDidLoad()
   {
@@ -96,11 +98,30 @@ class WinningTicketViewController: UIViewController, UITextFieldDelegate
   }
   func winningTicketChosen() -> [String]
   {
-    let correctTicket = winningTicket.sorted()
+    let correctTicket = winningTicketNumbers.sorted()
     return correctTicket
   }
-//  @IBAction func compareToTickets(_ sender: Any)
-//  {
-//    
-//  }
+  
+  @IBAction func compareToTickets(sender: UIButton)
+  {
+    var numbersSet = Set<Int>()           //making an array to store strings as ints into a set into a Ticket object
+    for string in winningTicketNumbers
+    {
+      if let number = Int(string)
+      {
+        numbersSet.insert(Int(number))
+      }
+    }
+    let winningTicket = Ticket(picks: numbersSet)
+    delegate.winningTicketViewController(vc: self, winningTicketWasChosen: winningTicket)
 }
+
+
+
+
+
+
+
+
+
+
