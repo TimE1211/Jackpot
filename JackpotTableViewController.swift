@@ -12,6 +12,7 @@ import UIKit
 class JackpotTableViewController: UITableViewController, WinningTicketViewControllerDelegate
 {
   var lotteryArray = [Ticket]()
+  var count = 0
   
   override func viewDidLoad()
   {
@@ -21,14 +22,12 @@ class JackpotTableViewController: UITableViewController, WinningTicketViewContro
   override func didReceiveMemoryWarning()
   {
     super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
   }
 
   // MARK: - Table view data source
 
   override func numberOfSections(in tableView: UITableView) -> Int
   {
-      // #warning Incomplete implementation, return the number of sections
     return 1
   }
 
@@ -63,7 +62,7 @@ class JackpotTableViewController: UITableViewController, WinningTicketViewContro
   
   func winningTicketViewController(vc: WinningTicketViewController, winningTicketWasChosen ticket: Ticket)
   {
-    
+    //going to get info from WinningTicketVC and compare with random tickets and count += 1 for each number thay have shared then calculate the prizes at the end, then make the backrounds of cells light up for each winner -> 3 or more sim 
   }
 }
 

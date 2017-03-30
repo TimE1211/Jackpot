@@ -127,7 +127,7 @@
                                 <rect key="frame" x="156" y="388" width="63" height="30"/>
                                 <state key="normal" title="Compare"/>
                                 <connections>
-                                    <action selector="compareToTickets:" destination="PPb-Ry-FJL" eventType="touchUpInside" id="8gH-bY-rcB"/>
+                                    <action selector="compareToTicketsWithSender:" destination="PPb-Ry-FJL" eventType="touchUpInside" id="zPU-Px-x8j"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -158,7 +158,6 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="compareToTickets" destination="KVz-1k-WCX" id="e7P-Rz-ClN"/>
                         <outlet property="fifthNumberTextField" destination="UE0-ca-zF4" id="YXC-aE-dsG"/>
                         <outlet property="firstNumberTextField" destination="81R-pD-Yhv" id="dh2-9S-UDQ"/>
                         <outlet property="fourthNumberTextField" destination="Cpf-eK-fsb" id="D5U-Z5-gzG"/>

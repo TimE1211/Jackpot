@@ -12,6 +12,11 @@ class Ticket
 {
   var picks = Set<Int>()
   
+  init(picks: Set<Int>)
+  {
+    self.picks = picks        //creating a new init func that allows me to input a set as an argument to make a Ticket object
+  }
+
   init()
   {
     for _ in 0..<6
