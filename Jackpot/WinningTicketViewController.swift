@@ -7,10 +7,10 @@
 //
 
 import UIKit
-//protocol WinningTicketDelegate
-//{
-//  func compareWinningTicket(winningTicket: [String])
-//}
+protocol WinningTicketViewControllerDelegate
+{
+  func winningTicketViewController(
+}
 
 class WinningTicketViewController: UIViewController, UITextFieldDelegate
 {
